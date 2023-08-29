@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-tjl2l*h#0yoc0esqmib1xa@=3*iry2()8t$80k$x0+)q%)vor0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sexyyoungminzzzz.pythonanywhere.com']
+ALLOWED_HOSTS = ['sexyyoungminzzzz.pythonanywhere.com',"127.0.0.1"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'mysite',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,7 +125,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/sexyyoungminzzzz/mysite/media'
+MEDIA_ROOT = BASE_DIR/'media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/sexyyoungminzzzz/mysite/static'
+STATIC_ROOT = BASE_DIR/'static'
 STATIC_URL = '/static/'
